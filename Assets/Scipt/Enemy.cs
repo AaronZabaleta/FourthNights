@@ -39,8 +39,6 @@ public class Enemy : CharacterBehaviour
     {
         base.Update();
 
-       
-
         if (_target == null) return;
 
         if (Vector3.Distance(transform.position, _target.transform.position) <= _radius)

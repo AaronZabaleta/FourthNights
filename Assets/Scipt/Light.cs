@@ -5,8 +5,7 @@ using UnityEngine;
 public class Light : MonoBehaviour
 {
     public Transform player;
-
-
+    internal float intensity;
 
     private void LateUpdate()
     {

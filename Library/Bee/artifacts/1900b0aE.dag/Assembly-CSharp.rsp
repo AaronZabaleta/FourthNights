@@ -118,6 +118,7 @@
 -define:ENABLE_TIMELINE
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
+-define:UNITY_POST_PROCESSING_STACK_V2
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -325,6 +326,9 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/NetStandard/ref/2.1.0/netstandard.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Gradle.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.GradleProject.dll"
+-r:"C:/Program Files/Unity/Hub/Editor/2022.3.5f1/Editor/Data/PlaybackEngines/AndroidPlayer/Unity.Android.Types.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.4/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.9.4/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Autodesk.Fbx.Editor.ref.dll"
@@ -338,6 +342,8 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Formats.Fbx.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Postprocessing.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AddOns.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.AssetIdRemapUtility.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.ProBuilder.Editor.ref.dll"
@@ -372,18 +378,27 @@
 "Assets/Scipt/AnimationFrame.cs"
 "Assets/Scipt/Camera.cs"
 "Assets/Scipt/CharacterBehaviour.cs"
+"Assets/Scipt/DistortionEffectController.cs"
 "Assets/Scipt/Doors.cs"
 "Assets/Scipt/Enemy.cs"
+"Assets/Scipt/EnemySpawner.cs"
+"Assets/Scipt/EnemyVisibilityChecker.cs"
+"Assets/Scipt/Flecha.cs"
 "Assets/Scipt/Ilusion.cs"
 "Assets/Scipt/Interactable.cs"
 "Assets/Scipt/Inventory.cs"
 "Assets/Scipt/LifeBar.cs"
 "Assets/Scipt/Light.cs"
 "Assets/Scipt/Menu.cs"
+"Assets/Scipt/MindBar.cs"
+"Assets/Scipt/MindController.cs"
 "Assets/Scipt/Pause.cs"
 "Assets/Scipt/Player.cs"
+"Assets/Scipt/PlayerLightController.cs"
 "Assets/Scipt/RockBehaviour.cs"
+"Assets/Scipt/Seguimientoenemigo.cs"
 "Assets/Scipt/SkeletonAnimation.cs"
+"Assets/Scipt/TrampaPisable.cs"
 "Assets/Scipt/Traps.cs"
 -langversion:9.0
 

@@ -47,23 +47,26 @@ public class Player : CharacterBehaviour
     [SerializeField] private float currentMoveSpeed;
 
     [Header("Vida")]
-    [SerializeField] private float Life = 10;
+    [SerializeField] public float Life = 10;
 
     [Header("Trampas")]
     [SerializeField] private float MoveAlquitran = 0.75f;
     [SerializeField] private bool RangoLlave = false;
     [SerializeField] private bool TengoLlave = false;
-    [SerializeField] private bool PuertaAbierta = false;
+    [SerializeField] private bool CollisionPuerta = false;
 
 
     private bool _isGrounded = false;
+    float TiempoAtaque;
+    public float TiempoLimiteAtaque;
 
     public GameObject Llave;
     public GameObject Puerta;
-    public GameObject Spawn;
+    public GameObject Flecha;
+    public GameObject EnemigoCapsula;
+    public GameObject EnemySpawn;
 
     public float lifeState;
-
 
     private Vector3 _dir = new(), _posOffset = new();
 
@@ -88,7 +91,8 @@ public class Player : CharacterBehaviour
         _animator = GetComponentInChildren<Animator>();
 
         currentMoveSpeed = _moveSpeed;
-
+        
+           
     }
 
     protected override void Update()
@@ -100,15 +104,28 @@ public class Player : CharacterBehaviour
             Debug.Log("Tengo la llave");
 
             TengoLlave = true;
-            Llave.SetActive(false);
-            Spawn.SetActive(true);
+
+            EnemySpawn.SetActive(true);
+
+        }
+        if (Life == 0)
+        {
+            Morir();
         }
 
-        if (PuertaAbierta && Input.GetKeyDown(KeyCode.E))
-        {
-            Destroy(Puerta);
-            Debug.Log("Puerta abierta");
 
+        if (CollisionPuerta == true && Input.GetKeyDown(KeyCode.E))
+        {
+            if (TengoLlave == true)
+            {
+                Destroy(Puerta);
+
+                Debug.Log("Puerta abierta");
+            }
+            else
+            {
+                Debug.Log("Falta una llave");
+            }
         }
 
         base.Update();
@@ -247,9 +264,27 @@ public class Player : CharacterBehaviour
     
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.CompareTag("PuertaNivel"))
+        if (collision.gameObject.name == "Flecha")
         {
-            PuertaAbierta = true;
+            Life -= 2;
+
+            Debug.Log("-Auch- Tenes " + Life + " de vida");
+        }
+        if (collision.gameObject.name == "EnemigoCapsula")
+        {
+            TiempoAtaque = Time.deltaTime;
+
+            if (TiempoAtaque >= TiempoLimiteAtaque)
+            {
+                Life -= 2;
+                Debug.Log("Recibo danio Tenes " + Life + " de vida");
+                TiempoAtaque = 0;
+            }
+        }
+
+        if (collision.CompareTag("PuertaNivel")) 
+        {
+            CollisionPuerta = true;
 
             Debug.Log("Abrir Puerta, Presionar 'E'");
         }
@@ -294,20 +329,25 @@ public class Player : CharacterBehaviour
             if (Input.GetKey(_sprintKey)) 
             {
                  
-                currentMoveSpeed *= _sprintMultiplier;
+                currentMoveSpeed = _sprintMultiplier;
             }
             else if (Input.GetKey(_crouchKey))  
             {
                 
                 currentMoveSpeed = _crouchSpeed;
             }
+            else { currentMoveSpeed = _moveSpeed; }
            
         }
 
         Vector3 moveDir = transform.forward * dir.z + transform.right * dir.x;
         _rb.MovePosition(transform.position + moveDir.normalized * currentMoveSpeed * Time.fixedDeltaTime);
     }
-   
+    void Morir()
+    {
+        lifeState = 0;
+    }
+
     public override void TakeDamage(int dmg)
     {
         _actualHp -= dmg;
