@@ -348,9 +348,9 @@ public class Player : CharacterBehaviour
         lifeState = 0;
     }
 
-    public override void TakeDamage(int dmg)
+    public override void TakeDamage(float dmg)
     {
-        _actualHp -= dmg;
+        _actualHp -= Mathf.RoundToInt(dmg);  
 
         lifeState = _actualHp;
 
@@ -358,9 +358,8 @@ public class Player : CharacterBehaviour
         {
             Destroy(gameObject);
         }
-        if (_isAlive == false)
+        else if (_isAlive == false)
         {
-
             Destroy(gameObject);
         }
         else

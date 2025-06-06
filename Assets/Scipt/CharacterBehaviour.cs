@@ -39,15 +39,14 @@ public class CharacterBehaviour : MonoBehaviour
         if (!_isAlive) return;
     }
 
-    public virtual void TakeDamage(int dmg)
+    public virtual void TakeDamage(float dmg)
     {
-        _actualHp -= dmg;
+        _actualHp -= Mathf.RoundToInt(dmg);
+        if (_actualHp <= 0) _isAlive = false;
+    }
 
-        if(_actualHp <= 0)
-        {
-            _isAlive = false;
-
-        }
-      
+    public float GetNormalizedLife()
+    {
+        return Mathf.Clamp01((float)_actualHp / _maxHp);
     }
 }

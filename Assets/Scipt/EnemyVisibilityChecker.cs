@@ -9,7 +9,7 @@ public class EnemyVisibilityChecker : MonoBehaviour
     public float visibilityThreshold = 0.5f;
     public float samplePoints = 5;
     private AudioSource audioSource;
-    private bool wasVisible = false;
+   
 
     void Start()
     {
@@ -17,18 +17,9 @@ public class EnemyVisibilityChecker : MonoBehaviour
     }
     void Update()
     {
-        bool isVisible = IsPartiallyVisible();
+        
 
-        if (isVisible && !wasVisible)
-        {
-            audioSource.Play();
-        }
-        else if (!isVisible && wasVisible)
-        {
-            audioSource.Stop();
-        }
-
-        wasVisible = isVisible;
+       
     }
     public bool IsPartiallyVisible()
     {

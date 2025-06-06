@@ -8,11 +8,10 @@ public class MindBar : MonoBehaviour
     public Image mindState;
     public Slider mindSlider;
     public float mindValue = 100f;
-    public float decreaseRate = 5f;
 
     public void DecreaseMind(float amount)
     {
-        mindValue = Mathf.Clamp(mindValue - amount * Time.deltaTime, 0f, 100f);
+        mindValue = Mathf.Clamp(mindValue - amount, 0f, 100f);
         mindSlider.value = mindValue;
     }
 

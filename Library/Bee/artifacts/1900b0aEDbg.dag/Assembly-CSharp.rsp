@@ -389,6 +389,8 @@
 "Assets/Scipt/Menu.cs"
 "Assets/Scipt/MindBar.cs"
 "Assets/Scipt/MindController.cs"
+"Assets/Scipt/NoLights.cs"
+"Assets/Scipt/PassLvl.cs"
 "Assets/Scipt/Pause.cs"
 "Assets/Scipt/Player.cs"
 "Assets/Scipt/PlayerLightController.cs"

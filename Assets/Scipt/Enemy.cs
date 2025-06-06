@@ -65,27 +65,23 @@ public class Enemy : CharacterBehaviour
     }
 
 
-    public override void TakeDamage(int dmg)
+    public override void TakeDamage(float dmg)
     {
-        _actualHp -= dmg;
+        _actualHp -= Mathf.RoundToInt(dmg);
 
+        
 
-        if (_actualHp <= 0 )
+        if (_actualHp <= 0)
         {
-
-
             Destroy(gameObject);
-
-
         }
-        else
+        else if (_isAlive == false)
         {
-            Debug.Log($"{name}: Au. :(");
-
+            Destroy(gameObject);
         }
-
-
+       
     }
+
 
     public void Attack()
     {
