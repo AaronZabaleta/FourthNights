@@ -355,6 +355,7 @@
 "Assets/Scripts/Ilusion.cs"
 "Assets/Scripts/interface.cs"
 "Assets/Scripts/KeyCollectable.cs"
+"Assets/Scripts/KeyCollectedEvent.cs"
 "Assets/Scripts/LightFollowPlayer.cs"
 "Assets/Scripts/MadnessScreenEffect.cs"
 "Assets/Scripts/Menu.cs"
@@ -364,11 +365,14 @@
 "Assets/Scripts/PauseManager.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PlayerLightController.cs"
+"Assets/Scripts/Projectile.cs"
 "Assets/Scripts/RockBehaviour.cs"
 "Assets/Scripts/SkeletonAnimation.cs"
+"Assets/Scripts/SlowZone.cs"
 "Assets/Scripts/SwitchActivator.cs"
 "Assets/Scripts/TrampaPisable.cs"
 "Assets/Scripts/Trap.cs"
+"Assets/Scripts/WinTrigger.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

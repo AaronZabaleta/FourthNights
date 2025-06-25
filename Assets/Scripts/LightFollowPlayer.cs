@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LightFollowPlayer : MonoBehaviour
 {
+   
     public Transform player;
 
     private void LateUpdate()

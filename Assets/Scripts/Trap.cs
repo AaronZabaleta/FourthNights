@@ -2,55 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Trap : MonoBehaviour, IAttackable
+public class Trap : MonoBehaviour
 {
     [Header("Gameplay")]
     [SerializeField] private int damage = 9999;
-    [SerializeField] private float attackDistance = 2.0f;
     [SerializeField] private LayerMask attackMask;
-    [SerializeField] private Transform rayOrigin;
-    [SerializeField] private float radius;
 
     [Header("Audio")]
     [SerializeField] private AudioClip bigExplosion;
     private AudioSource audioSource;
 
     [Header("VFX")]
-    public GameEvent<Vector3> onExplosion; // evento para notificar que explotó
+    public GameEvent<Vector3> onExplosion;
+
+    private bool hasTriggered = false;
 
     private void Awake()
     {
         audioSource = gameObject.AddComponent<AudioSource>();
     }
 
-    public void Attack()
+    private void OnTriggerEnter(Collider other)
     {
-        if (Physics.Raycast(rayOrigin.position, transform.forward, out RaycastHit hit, attackDistance, attackMask))
+        if (hasTriggered) return;
+        if (((1 << other.gameObject.layer) & attackMask) == 0) return;
+
+        if (other.TryGetComponent(out IDamageable damageable))
         {
-            if (hit.collider.TryGetComponent(out IDamageable damageable))
-            {
-                damageable.TakeDamage(damage);
-            }
+            damageable.TakeDamage(damage);
         }
 
-        onExplosion?.Raise(transform.position); // notifica a quien escuche
+        onExplosion?.Raise(transform.position);
+
         if (bigExplosion != null)
             audioSource.PlayOneShot(bigExplosion);
 
+        hasTriggered = true;
         Destroy(gameObject, 1.5f);
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Enemy"))
-        {
-            Attack();
-        }
-    }
-
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, radius);
     }
 }

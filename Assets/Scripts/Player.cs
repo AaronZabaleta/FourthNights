@@ -25,6 +25,7 @@ public class Player : Character, IInteractable
     [SerializeField] private KeyCode crouchKey = KeyCode.LeftControl;
 
     [Header("Physics")]
+    [SerializeField] private PlayerLightController lightController;
     [SerializeField] private float groundRayDistance = 1.9f;
     [SerializeField] private LayerMask groundRayMask;
     [SerializeField] private float intDistance = 5.0f;
@@ -41,6 +42,7 @@ public class Player : Character, IInteractable
     private Vector3 dir;
     private float currentMoveSpeed;
     private bool isGrounded;
+    private bool canMove = true;
 
     private void Start()
     {
@@ -53,11 +55,27 @@ public class Player : Character, IInteractable
     {
         if (!healthComponent.IsAlive) return;
         HandleInputs();
+
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            lightController.StartRecharge();
+            canMove = false;
+        }
+        if (Input.GetKeyUp(KeyCode.F))
+        {
+            lightController.StopRecharge();
+            canMove = true;
+        }
+
+        if (canMove)
+        {
+            Move(); 
+        }
     }
 
     private void FixedUpdate()
     {
-        if (dir.sqrMagnitude > 0)
+        if (canMove && dir.sqrMagnitude > 0)
             Move();
 
         if (!isGrounded)
@@ -140,6 +158,16 @@ public class Player : Character, IInteractable
     {
         Vector3 rayStart = transform.position + Vector3.up * 0.1f;
         return Physics.Raycast(rayStart, Vector3.down, groundRayDistance, groundRayMask);
+    }
+
+    public void ModifySpeed(float factor)
+    {
+        moveSpeed *= factor;
+    }
+
+    public void ResetSpeed()
+    {
+        moveSpeed = 3.5f; 
     }
 
     private void OnDrawGizmos()

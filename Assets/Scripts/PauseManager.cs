@@ -83,6 +83,18 @@ public class PauseManager : MonoBehaviour
         }
     }
 
+    public void TriggerWin()
+    {
+        if (isWin) return;
+
+        winScreen.SetActive(true);
+        isWin = true;
+        Time.timeScale = 0;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        PauseAllAudio();
+    }
+
     private void PauseAllAudio()
     {
         foreach (var audio in FindObjectsOfType<AudioSource>())
