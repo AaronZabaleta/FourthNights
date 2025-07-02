@@ -6,11 +6,26 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public GameObject panelEleccion;
+    public AudioSource musicSource;
 
-    public void EmpezarNivel(string nombreNivel)
+
+    private void Start()
     {
-        SceneManager.LoadScene(nombreNivel);
+        if (musicSource != null && !musicSource.isPlaying)
+        {
+            musicSource.Play();
+        }
     }
+
+ public void EmpezarNivel(string nombreNivel)
+{
+    if (musicSource != null)
+    {
+        musicSource.Stop();
+    }
+
+    SceneManager.LoadScene(nombreNivel);
+}
 
     public void SalirDelJuego()
     {

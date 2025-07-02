@@ -43,6 +43,9 @@ public class Player : Character, IInteractable
     private float currentMoveSpeed;
     private bool isGrounded;
     private bool canMove = true;
+    private float footstepCooldown = 0.4f;
+    private float footstepTimer = 0f;
+
 
     private void Start()
     {
@@ -69,9 +72,22 @@ public class Player : Character, IInteractable
 
         if (canMove)
         {
-            Move(); 
+            Move();
+            HandleFootsteps();
         }
     }
+
+    private void HandleFootsteps()
+    {
+        footstepTimer -= Time.deltaTime;
+
+        if (dir.sqrMagnitude > 0.1f && isGrounded && footstepTimer <= 0f)
+        {
+            GameAudioManager.Instance?.PlaySFX(GameAudioManager.Instance.footstepClip);
+            footstepTimer = footstepCooldown;
+        }
+    }
+
 
     private void FixedUpdate()
     {

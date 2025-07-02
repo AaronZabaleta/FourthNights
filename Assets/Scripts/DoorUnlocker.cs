@@ -86,6 +86,7 @@ public class DoorUnlocker : MonoBehaviour, IInteractable, IUsable
         {
             if (hasKey)
             {
+                GameAudioManager.Instance?.PlaySFX(GameAudioManager.Instance.doorOpenClip);
                 Destroy(gameObject);
             }
             else
@@ -97,6 +98,7 @@ public class DoorUnlocker : MonoBehaviour, IInteractable, IUsable
         {
             if (currentActivatedSwitches >= requiredSwitches)
             {
+                GameAudioManager.Instance?.PlaySFX(GameAudioManager.Instance.doorOpenClip);
                 Destroy(gameObject);
             }
             else

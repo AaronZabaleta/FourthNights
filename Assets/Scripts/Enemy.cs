@@ -20,6 +20,7 @@ public class Enemy : Character, IAttackable
     [SerializeField] private Transform target;
 
     private Animator animator;
+    private bool hasAlerted = false;
 
     protected override void Awake()
     {
@@ -35,6 +36,12 @@ public class Enemy : Character, IAttackable
 
         if (distance <= radius)
         {
+            if (!hasAlerted)
+            {
+                GameAudioManager.Instance?.PlaySFX(GameAudioManager.Instance.skeletonAlertClip);
+                hasAlerted = true;
+            }
+
             Vector3 lookDir = target.position - transform.position;
             lookDir.y = 0;
             Quaternion rotation = Quaternion.LookRotation(lookDir);
@@ -54,6 +61,7 @@ public class Enemy : Character, IAttackable
         else
         {
             animator.SetBool(isWalkName, false);
+            hasAlerted = false; 
         }
     }
 
@@ -62,16 +70,10 @@ public class Enemy : Character, IAttackable
         Debug.DrawRay(rayOrigin.position, transform.forward * attackDistance, Color.red, 1f);
         if (Physics.Raycast(rayOrigin.position, transform.forward, out RaycastHit hit, attackDistance, attackMask))
         {
-            Debug.Log("Raycast hit: " + hit.collider.name);
             if (hit.collider.TryGetComponent(out IDamageable damageable))
             {
-                Debug.Log("Enemy is damaging: " + damageable);
                 damageable.TakeDamage(attackDamage);
             }
-        }
-        else
-        {
-            Debug.Log("Raycast did not hit anything.");
         }
     }
 }

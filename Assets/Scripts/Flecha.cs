@@ -16,5 +16,7 @@ public class Flecha : MonoBehaviour
         {
             rb.velocity = spawnPoint.forward * velocidad;
         }
+
+        GameAudioManager.Instance?.PlaySFX(GameAudioManager.Instance.arrowShootClip);
     }
 }

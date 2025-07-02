@@ -8,19 +8,11 @@ public class Trap : MonoBehaviour
     [SerializeField] private int damage = 9999;
     [SerializeField] private LayerMask attackMask;
 
-    [Header("Audio")]
-    [SerializeField] private AudioClip bigExplosion;
-    private AudioSource audioSource;
-
     [Header("VFX")]
+    public GameObject explosionVFXPrefab; 
     public GameEvent<Vector3> onExplosion;
 
     private bool hasTriggered = false;
-
-    private void Awake()
-    {
-        audioSource = gameObject.AddComponent<AudioSource>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -32,10 +24,21 @@ public class Trap : MonoBehaviour
             damageable.TakeDamage(damage);
         }
 
+       
         onExplosion?.Raise(transform.position);
 
-        if (bigExplosion != null)
-            audioSource.PlayOneShot(bigExplosion);
+        
+        if (GameAudioManager.Instance != null && GameAudioManager.Instance.explosionClip != null)
+        {
+            GameAudioManager.Instance.PlaySFX(GameAudioManager.Instance.explosionClip);
+        }
+
+        
+        if (explosionVFXPrefab != null)
+        {
+            GameObject vfx = Instantiate(explosionVFXPrefab, transform.position, Quaternion.identity);
+            Destroy(vfx, 3f); 
+        }
 
         hasTriggered = true;
         Destroy(gameObject, 1.5f);

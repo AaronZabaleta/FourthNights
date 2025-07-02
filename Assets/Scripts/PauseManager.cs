@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.ProBuilder.Shapes;
 using UnityEngine.SceneManagement;
 
+
 public class PauseManager : MonoBehaviour
 {
     [Header("UI Elements")]
@@ -12,6 +13,7 @@ public class PauseManager : MonoBehaviour
     public GameObject exitMenu;
     public GameObject winScreen;
     public GameObject deathScreen;
+    public AudioSource backgroundAudio;
 
     private bool isPaused = false;
     private bool isDead = false;
@@ -36,10 +38,14 @@ public class PauseManager : MonoBehaviour
             else ResumeGame();
         }
     }
-
+    public void DebugTest()
+    {
+        Debug.Log("CLICK REGISTRADO");
+    }
     private void ActivatePause()
     {
         pauseMenu.SetActive(true);
+        exitMenu.SetActive(true); 
         isPaused = true;
         Time.timeScale = 0;
         Cursor.visible = true;
@@ -97,23 +103,26 @@ public class PauseManager : MonoBehaviour
 
     private void PauseAllAudio()
     {
-        foreach (var audio in FindObjectsOfType<AudioSource>())
-            audio.Pause();
+        GameAudioManager.Instance?.PauseAll();
     }
 
     private void ResumeAllAudio()
     {
-        foreach (var audio in FindObjectsOfType<AudioSource>())
-            audio.Play();
+        GameAudioManager.Instance?.ResumeAll();
     }
 
-    public void LoadMenu(string menuName)
+
+
+public void LoadMenu(string menuName)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(menuName);
     }
 
     public void RestartLevel(string levelName)
     {
+        Time.timeScale = 1;
+        GameAudioManager.Instance?.ResetInstance();
         SceneManager.LoadScene(levelName);
     }
 

@@ -10,8 +10,8 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float mouseSensitivity = 100f;
 
     [Header("Audio")]
-    public AudioSource backgroundAudio;
-    public AudioSource threatAudio;
+    public AudioClip backgroundClip;
+    public AudioClip threatClip;
     public float threatStartTime = 0.50f;
     public EnemyVisibilityChecker[] enemies;
     public float viewThreshold = 0.7f;
@@ -26,8 +26,8 @@ public class CameraController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        if (backgroundAudio != null && !backgroundAudio.isPlaying)
-            backgroundAudio.Play();
+        if (GameAudioManager.Instance != null)
+            GameAudioManager.Instance.PlayAmbience(backgroundClip);
     }
 
     private void Update()
@@ -82,22 +82,16 @@ public class CameraController : MonoBehaviour
     {
         if (isThreatPlaying) return;
 
-        if (backgroundAudio != null && backgroundAudio.isPlaying)
-            backgroundAudio.Pause();
+        GameAudioManager.Instance?.PauseAll();
+        GameAudioManager.Instance?.PlayThreat(threatClip, threatStartTime);
 
-        if (threatAudio != null && threatAudio.clip != null && threatStartTime < threatAudio.clip.length)
-        {
-            threatAudio.Stop();
-            threatAudio.time = threatStartTime;
-            threatAudio.Play();
-            isThreatPlaying = true;
-            StartCoroutine(WaitForThreatToFinish());
-        }
+        isThreatPlaying = true;
+        StartCoroutine(WaitForThreatToFinish());
     }
 
     private IEnumerator WaitForThreatToFinish()
     {
-        while (threatAudio != null && threatAudio.isPlaying)
+        while (GameAudioManager.Instance != null && GameAudioManager.Instance.threatSource.isPlaying)
         {
             yield return null;
         }
@@ -107,13 +101,9 @@ public class CameraController : MonoBehaviour
 
     private void ReturnToBackgroundAudio()
     {
-        if (threatAudio != null && threatAudio.isPlaying)
-            threatAudio.Stop();
-
-        if (backgroundAudio != null && !backgroundAudio.isPlaying)
-            backgroundAudio.Play();
-
+        GameAudioManager.Instance?.PlayAmbience(backgroundClip);
         isThreatPlaying = false;
         lastSeenEnemy = null;
     }
 }
+

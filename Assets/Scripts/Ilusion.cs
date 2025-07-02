@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class Ilusion : MonoBehaviour
 {
     public AudioClip ghostSound;
+    public GameObject smokePrefab; 
     private AudioSource audioSource;
+    private GameObject spawnedSmoke;
 
     private void Start()
     {
@@ -21,7 +23,24 @@ public class Ilusion : MonoBehaviour
             {
                 audioSource.PlayOneShot(ghostSound);
             }
+
+            if (smokePrefab != null)
+            {
+                spawnedSmoke = Instantiate(smokePrefab, transform.position, Quaternion.identity);
+                
+                spawnedSmoke.transform.SetParent(transform);
+            }
+
             Destroy(gameObject, ghostSound.length);
+        }
+    }
+
+    private void OnDestroy()
+    {
+        
+        if (spawnedSmoke != null)
+        {
+            Destroy(spawnedSmoke);
         }
     }
 }

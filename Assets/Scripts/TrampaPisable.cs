@@ -11,6 +11,7 @@ public class TrampaPisable : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             flechaScript.Disparo();
+            GameAudioManager.Instance?.PlaySFX(GameAudioManager.Instance.buttonPressClip);
             Debug.Log("Flecha disparada desde trampa");
         }
     }

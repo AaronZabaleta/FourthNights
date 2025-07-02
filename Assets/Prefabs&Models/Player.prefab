@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5478986448015601977}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - component: {fileID: 6146021385942129195}
   - component: {fileID: 9124179786184770338}
   - component: {fileID: 8290780379088853126}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: X Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -63,7 +63,7 @@ Transform:
   m_GameObject: {fileID: 304765126307215860}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00000011921, y: -0.942, z: 0.079}
+  m_LocalPosition: {x: 0, y: -1.235, z: 0}
   m_LocalScale: {x: 1.443549, y: 1.443549, z: 1.443549}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -114,7 +114,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1591035959494906422}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -146,7 +146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 118616273263194511}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8296611406891105940}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762787483965521883}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9214764986814894331}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3389296571525091855}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,7 +306,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7729703454614300158}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -337,7 +337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5024872904943160203}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -369,7 +369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3286867029398801719}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightToeBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -401,7 +401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8256283957534268974}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8008721906791640134}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5585155540724319828}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5856954574935356071}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -528,7 +528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6740771489073149369}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4016967327246764574}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6422528718202877522}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,13 +623,14 @@ GameObject:
   m_Component:
   - component: {fileID: 4687455730764411420}
   - component: {fileID: 1908977333826825734}
-  - component: {fileID: 8333864854191331413}
+  - component: {fileID: 970341358719345175}
+  - component: {fileID: 153492397287706268}
   - component: {fileID: 5005166282916016911}
   - component: {fileID: 94108350229997157}
   - component: {fileID: 3242395994140859004}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,7 +645,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.6951057, y: 0.82, z: 0.732}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.1925653, y: 1.1925653, z: 1.1925653}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6146021385942129195}
@@ -661,7 +662,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2947608148298180781}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &8333864854191331413
+--- !u!114 &970341358719345175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2947608148298180781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d260a294f59de4540b12784173fabda8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 100
+  currentHp: 100
+  onHealthChanged: {fileID: 0}
+  onDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DamageScreenEffect, Assembly-CSharp
+        m_MethodName: OnDeath
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &153492397287706268
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -686,20 +717,21 @@ MonoBehaviour:
   intKey: 101
   sprintKey: 304
   crouchKey: 306
+  lightController: {fileID: 2237424861811454306}
   groundRayDistance: 1.9
   groundRayMask:
     serializedVersion: 2
-    m_Bits: 0
-  intDistance: 5
-  intRadius: 1
+    m_Bits: 1073741824
+  intDistance: 1.33
+  intRadius: 1.53
   intMask:
     serializedVersion: 2
-    m_Bits: 0
-  jumpForce: 2
+    m_Bits: 536870912
+  jumpForce: 0.5
   moveSpeed: 3.5
-  sprintMultiplier: 2
+  sprintMultiplier: 8
   crouchSpeed: 1.5
-  rayOrigin: {fileID: 0}
+  rayOrigin: {fileID: 6778194654666647725}
 --- !u!23 &5005166282916016911
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -764,7 +796,7 @@ CapsuleCollider:
   m_Radius: 0.3
   m_Height: 2.63
   m_Direction: 1
-  m_Center: {x: 0, y: 0.35, z: 0.09}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &3242395994140859004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -790,7 +822,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!1 &3080676050931428434
 GameObject:
@@ -801,7 +833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 867145782761138939}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -833,7 +865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8664979715503097236}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -867,7 +899,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1295051308579785112}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -899,7 +931,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5396677077904914624}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -931,7 +963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9173133903891226578}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -966,8 +998,9 @@ GameObject:
   - component: {fileID: 8248402109568422416}
   - component: {fileID: 1144530383575015588}
   - component: {fileID: 8610177938334811910}
+  - component: {fileID: 4821651604087854520}
   - component: {fileID: 6954919655207109844}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -983,7 +1016,7 @@ Transform:
   m_GameObject: {fileID: 3640909939131254409}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000007450581, y: -8.881784e-16, z: -4.7351012e-14, w: 1}
-  m_LocalPosition: {x: 0.004, y: 0.063, z: -0.287}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1004,10 +1037,12 @@ MonoBehaviour:
   playerBody: {fileID: 4687455730764411420}
   cameraHolder: {fileID: 4681274651406575097}
   mouseSensitivity: 53.9
-  backgroundAudio: {fileID: 0}
-  threatAudio: {fileID: 0}
-  threatStartTime: 0.5
-  enemies: []
+  backgroundClip: {fileID: 8300000, guid: f0b8047a49c14a749916aca6da6a7872, type: 3}
+  threatClip: {fileID: 8300000, guid: f76104e228eb8be419ff2ebeae5c2678, type: 3}
+  threatStartTime: 50
+  enemies:
+  - {fileID: 0}
+  - {fileID: 0}
   viewThreshold: 0.7
   detectionRange: 10
 --- !u!20 &1144530383575015588
@@ -1069,6 +1104,102 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3640909939131254409}
   m_Enabled: 1
+--- !u!82 &4821651604087854520
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3640909939131254409}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f76104e228eb8be419ff2ebeae5c2678, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.602
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &6954919655207109844
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1076,12 +1207,12 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3640909939131254409}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c2110a847ae9c0f4881ec0799360252a, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.519
+  m_audioClip: {fileID: 8300000, guid: f0b8047a49c14a749916aca6da6a7872, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.608
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1174,7 +1305,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5728649157074070040}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1206,7 +1337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778491825027019280}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 336528155568357141}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1272,7 +1403,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8769566175558275422}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1304,7 +1435,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4102211460921990561}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Spine1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1336,7 +1467,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7363638541753021788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1368,7 +1499,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6012883900666055508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1400,7 +1531,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2444972714375513029}
   - component: {fileID: 429035262566903811}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Beta_Surface
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1549,7 +1680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4277864824562694386}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2171151968083726646}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1611,7 +1742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4098783716892448671}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1643,7 +1774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2416629025987188987}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1675,7 +1806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4549942471501861761}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1707,7 +1838,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3178389543177329648}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1744,7 +1875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8023409900028848389}
   - component: {fileID: 2112812664217436781}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Beta_Joints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1892,7 +2023,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6473425869612888462}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1924,7 +2055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784282124304068881}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1956,7 +2087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3322507018688454544}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1988,7 +2119,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4220689816575712137}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2020,7 +2151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3936748788681313908}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2052,7 +2183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 716067692215044801}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2084,7 +2215,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7895309724080768543}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2116,7 +2247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6552054494077053497}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandRing4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2147,8 +2278,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4681274651406575097}
-  - component: {fileID: 3971854511417796309}
-  m_Layer: 0
+  - component: {fileID: 4272784526099216760}
+  m_Layer: 3
   m_Name: Ray Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2164,14 +2295,14 @@ Transform:
   m_GameObject: {fileID: 6317399533305310528}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000000054948032, y: 1.7763568e-15, z: -1.7167517e-13, w: 1}
-  m_LocalPosition: {x: -0, y: 1.4613967, z: 0.09490746}
+  m_LocalPosition: {x: 0.079, y: 1.049, z: 0.486}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3711539049134614439}
   m_Father: {fileID: 4687455730764411420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &3971854511417796309
+--- !u!54 &4272784526099216760
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2179,7 +2310,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6317399533305310528}
   serializedVersion: 4
-  m_Mass: 112.85
+  m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -2207,7 +2338,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 133803892470081069}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:HeadTop_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2238,7 +2369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8991222906358816439}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2270,7 +2401,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 728146512723399956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2302,7 +2433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 451926486989362125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2334,7 +2465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1081661016955813712}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2367,6 +2498,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7123991420763013246}
   - component: {fileID: 8008451640564994536}
+  - component: {fileID: 2237424861811454306}
   - component: {fileID: 7193923275151894546}
   m_Layer: 0
   m_Name: Point Light
@@ -2402,7 +2534,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b104f02701502743a5a82bcdc9ad7d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 4687455730764411420}
+--- !u!114 &2237424861811454306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6470352864812746487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be67c965b41f0ef47a78fc87d335bb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rechargeRate: 10
+  maxBattery: 100
+  currentBattery: 50
+  maxIntensity: 6.33
+  minIntensity: 0
+  intensityRechargeSpeed: 2
+  rechargeParticlesPrefab: {fileID: 7071562551752196724, guid: 14878b9b2f67426468b7750deb8f62fd, type: 3}
+  playerLight: {fileID: 7193923275151894546}
+  lightDrainRate: 0.1
+  onLightLevelChanged: {fileID: 0}
 --- !u!108 &7193923275151894546
 Light:
   m_ObjectHideFlags: 0
@@ -2474,7 +2628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8260490663027908640}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2506,7 +2660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8999523360335395159}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandThumb4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2537,7 +2691,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4609396542758466788}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftToe_End
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2568,7 +2722,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4523044210487369393}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2600,7 +2754,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1919164761617776895}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandPinky4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2631,7 +2785,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2655702805570882620}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2663,7 +2817,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3157489510124336433}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2695,7 +2849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9196872506044766996}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2727,7 +2881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6417297239979090057}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2759,7 +2913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7629537313530223041}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2791,7 +2945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 811866402307550334}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2823,7 +2977,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8360301414143121405}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2855,7 +3009,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5436695651908129705}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2887,7 +3041,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1683717357031498575}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2919,7 +3073,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 473677463882410871}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2951,7 +3105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6778194654666647725}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Ray Origin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2967,7 +3121,7 @@ Transform:
   m_GameObject: {fileID: 8924653782774493564}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.039, z: 0}
+  m_LocalPosition: {x: -0.011, y: 0.72, z: 0.144}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2982,7 +3136,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9023326004656296638}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftHandMiddle4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3013,7 +3167,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7487972894660998037}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mixamorig:LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
